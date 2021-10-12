@@ -1,0 +1,17 @@
+table {
+    table-layout: fixed;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+  
+.select {
+    user-select: none;
+}
+
+div.tableau {
+    width: 30%;
+    
+}

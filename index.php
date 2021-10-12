@@ -1,8 +1,31 @@
-<h2>Count</h2>
-<p>Retourne le nombre d’éléments dans un tableau.</p>
+<?php include 'header.php'; ?>
 
-    <p>$colors=array("Blue","Orange","red");</p>
-    <p>echo count($colors); // 3</p>
+
+    <h2>Count</h2>
+    <p>Retourne le nombre d’éléments dans un tableau.</p>
+    <div class="tableau">
+    <table>
+        <tbody>
+            <tr>
+                <th scope="row" class="select">1.</th>
+                <td><span><</span><span>?php</span></td>
+            </tr>
+            <tr>
+                <th scope="row" class="select">2.</th>
+                <td>$colors=array("Blue","Orange","red");</td>
+            </tr>
+            <tr>
+                <th scope="row" class="select">3.</th>
+                <td>echo count($colors);</td>
+            </tr>
+            <tr>
+                <th scope="row" class="select">4.</th>
+                <td>?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 <?php
     $colors=array("Blue","Orange","red");
     echo count($colors); // 3
@@ -36,6 +59,27 @@ $rest = substr("abcdef", 0, -1);  // retourne "abcde"
 $rest = substr("abcdef", 2, -1);  // retourne "cde"
 $rest = substr("abcdef", -3, -1); // retourne "de"
 ?>
+
+<h2>In_array</h2>
+<p>Recherche une valeur spécifique dans un tableau.</p>
+
+<p>$colors = array("Blue", "Orange", "Red");</p>
+<p>if (in_array("Red", $colors)) {</p>
+<p>echo "Red was found";}</p>
+<p>if (in_array("Green", $colors)) {</p>
+<p>echo "Green was found";}</p>
+
+<?php
+    $colors = array("Blue", "Orange", "Red");
+    if (in_array("Red", $colors)) {
+        echo "Red was found";
+    }
+    if (in_array("Green", $colors)) {
+        echo "Green was found";
+    }
+?>
+
+
 
 
 
