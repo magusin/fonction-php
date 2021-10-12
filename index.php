@@ -8,27 +8,29 @@
         <tbody>
             <tr>
                 <th scope="row" class="select">1.</th>
-                <td><span><</span><span>?php</span></td>
+                <td><span class="color-3"><</span><span class="color-3">?php</span></td>
             </tr>
             <tr>
                 <th scope="row" class="select">2.</th>
-                <td>$colors=array("Blue","Orange","red");</td>
+                <td><span class="color-6">$colors</span><span class="color-2">=array</span><span class="color-4">(</span><span class="color-5">"Blue"</span><span class="color-1">,</span><span class="color-5">"Orange"</span><span class="color-1">,</span><span class="color-5">"red"</span><span class="color-4">)</span><span class="color-1">;</span></td>
             </tr>
             <tr>
                 <th scope="row" class="select">3.</th>
-                <td>echo count($colors);</td>
+                <td><span class="color-2">echo count</span><span class="color-4">(</span><span class="color-6">$colors</span><span class="color-4">)</span><span class="color-1">; </span><span class="color-7">// 3</span></td>
             </tr>
             <tr>
                 <th scope="row" class="select">4.</th>
-                <td>?></td>
+                <td class="color-3">?></td>
             </tr>
+           
         </tbody>
     </table>
 </div>
 
 <?php
     $colors=array("Blue","Orange","red");
-    echo count($colors); // 3
+    echo "resultat : ".count($colors);
+    // 3
 ?>
 <h2>Is_array</h2>
 <p>Est utilisé pour déterminer si une variable est un tableau ou non.</p>
