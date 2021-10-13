@@ -7,19 +7,19 @@
     <table>
         <tbody>
             <tr>
-                <th scope="row" class="select">1.</th>
+                <th scope="row">1.</th>
                 <td><span class="color-3"><</span><span class="color-3">?php</span></td>
             </tr>
             <tr>
-                <th scope="row" class="select">2.</th>
-                <td><span class="color-6">$colors</span><span class="color-2">=array</span><span class="color-4">(</span><span class="color-5">"Blue"</span><span class="color-1">,</span><span class="color-5">"Orange"</span><span class="color-1">,</span><span class="color-5">"red"</span><span class="color-4">)</span><span class="color-1">;</span></td>
+                <th scope="row">2.</th>
+                <td><span class="color-6">$colors</span><span class="color-2"><span class="color-1"> = </span>array</span><span class="color-4">(</span><span class="color-5">"Blue"</span><span class="color-1">,</span><span class="color-5">"Orange"</span><span class="color-1">,</span><span class="color-5">"red"</span><span class="color-4">)</span><span class="color-1">;</span></td>
             </tr>
             <tr>
-                <th scope="row" class="select">3.</th>
+                <th scope="row">3.</th>
                 <td><span class="color-2">echo count</span><span class="color-4">(</span><span class="color-6">$colors</span><span class="color-4">)</span><span class="color-1">; </span><span class="color-7">// 3</span></td>
             </tr>
             <tr>
-                <th scope="row" class="select">4.</th>
+                <th scope="row">4.</th>
                 <td class="color-3">?></td>
             </tr>
            
@@ -28,22 +28,53 @@
 </div>
 
 <?php
-    $colors=array("Blue","Orange","red");
-    echo "resultat : ".count($colors);
+    $colors = array("Blue","Orange","red");
+    echo "Résultat : ".count($colors);
     // 3
 ?>
 <h2>Is_array</h2>
 <p>Est utilisé pour déterminer si une variable est un tableau ou non.</p>
 
-<p>$tab = array('X','Y','X');</p>
-<p>if (is_array($tab))</p>
-<p> echo "Ceci est un tableau....";</p>
-<p>else</p>
-<p>echo "Ceci n'est pas un tableau....";</p>
+<div class="tableau">
+    <table>
+        <tbody>
+            <tr>
+                <th scope="row">1.</th>
+                <td><span class="color-3"><</span><span class="color-3">?php</span></td>
+            </tr>
+            <tr>
+                <th scope="row">2.</th>
+                <td><span class="color-6">$tab</span><span class="color-1"> = </span><span class="color-2">array</span><span class="color-4">(</span><span class="color-5">"array"</span><span class="color-1">,</span><span class="color-9">126e7</span><span class="color-1">,</span><span class="color-8">[</span><span class="color-9">1</span><span class="color-1">,</span><span class="color-9">-152</span><span class="color-1">,</span><span class="color-5">"MAJ"</span><span class="color-8">]</span><span class="color-4">)</span><span class="color-1">;</span>
+            </td>
+            </tr>
+            <tr>
+                <th scope="row">3.</th>
+                <td><span class="color-8">if </span><span class="color-4">(</span><span class="color-2">is_array</span><span class="color-8">(</span><span class="color-6">$tab</span><span class="color-8">)</span><span class="color-4">)</span></td>
+            </tr>
+            <tr>
+                <th scope="row">4.</th>
+                <td class="color-2">echo <span class="color-5">"Ceci est un tableau..."</span><span class="color-1">;</span></td>
+            </tr>
+            <tr>
+                <th scope="row">5.</th>
+                <td class="color-8">else</td>
+            </tr>
+            <tr>
+                <th scope="row">6.</th>
+                <td class="color-2">echo <span class="color-5">"Ceci n'est pas un tableau..."</span><span class="color-1">;</span></td>
+            </tr>
+            <tr>
+                <th scope="row">7.</th>
+                <td class="color-3">?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 <?php
-    $tab = array('X','Y','X');
+    $tab = array('array',126e7,[1, -152, "MAJ"]);
     if (is_array($tab))
-        echo "Ceci est un tableau....";
+        echo "Résultat: Ceci est un tableau....";
     else
         echo "Ceci n'est pas un tableau....";
 ?>

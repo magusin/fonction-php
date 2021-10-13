@@ -25,11 +25,10 @@ td {
 
 th {
     padding: 0 10px;
-}
-  
-.select {
     user-select: none;
 }
+  
+
 
 div.tableau {
     width: 30%;
